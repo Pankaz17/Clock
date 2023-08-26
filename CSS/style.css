@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.clock_container{
+    height: 100vh;
+    width: 100%;
+    float: left;
+    background-color: rgb(84, 25, 97);
+}
+.logo{
+    height: 30px;
+    width: 300px;
+    position: absolute;
+    /* background-color: white; */
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 15px;
+    color: pink;
+    opacity: 0.5;
+    margin-top: 218px;
+    margin-left: 117px;
+}
+.clock{
+    height: 350px;
+    width: 350px;
+    background-color: rgba(212, 15, 15, 0.642);
+    border: 15px solid rgb(7, 1, 11);
+    border-radius: 50%;
+    position: relative; 
+    margin:40px auto;
+    box-shadow: inset 0 5px 25px #00000080, 0 5px 25px #00000080, 0 5px 25px #00000080, 0 5px 25px #00000080 ;
+    /* solid rgb(7, 1, 11); */
+}
+.clock::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: -18px;
+    top: -10px;
+    border-radius: 50%;
+    border: #573507;
+    z-index: -2;
+}
+.clock::after{
+    content: "";
+    height: 19px;
+    width: 19px;
+    background-color: #573507;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 48.5%;
+    box-shadow: 0 2px 4px #00000026;
+    right: 50%;
+    bottom: 50%;
+}
+.clock li{
+    list-style: none;
+    position: absolute;
+}
+.number{
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    padding: 5%;
+    /* font-size: 25px; */
+    text-align:center;
+    /* color: white; */
+}
+.number span{
+    display:block;
+    color: white;
+    font-size: 25px;
+
+}
+/* .number:nth-child(1){
+    transform: rotate(10deg);
+}
+.number:nth-child(1) span{
+    transform: rotate(-10deg);
+} */
+.number:nth-child(2){
+    transform: rotate(30deg);
+}
+.number:nth-child(2) span{
+    transform: rotate(-30deg);
+}
+.number:nth-child(3){
+    transform: rotate(60deg);
+}
+.number:nth-child(3) span{
+    transform: rotate(-60deg);
+}
+.number:nth-child(4){
+    transform: rotate(90deg);
+}
+.number:nth-child(4) span{
+    transform: rotate(-90deg);
+}
+.number:nth-child(5){
+    transform: rotate(120deg);
+}
+.number:nth-child(5) span{
+    transform: rotate(-120deg);
+}
+.number:nth-child(6){
+    transform: rotate(150deg);
+}
+.number:nth-child(6) span{
+    transform: rotate(-150deg);
+}
+.number:nth-child(7){
+    transform: rotate(180deg);
+}
+.number:nth-child(7) span{
+    transform: rotate(-180deg);
+}
+.number:nth-child(8){
+    transform: rotate(210deg);
+}
+.number:nth-child(8) span{
+    transform: rotate(-210deg);
+}
+.number:nth-child(9){
+    transform: rotate(240deg);
+}
+.number:nth-child(9) span{
+    transform: rotate(-240deg);
+}
+.number:nth-child(10){
+    transform: rotate(270deg);
+}
+.number:nth-child(10) span{
+    transform: rotate(-270deg);
+}
+.number:nth-child(11){
+    transform: rotate(300deg);
+}
+.number:nth-child(11) span{
+    transform: rotate(-300deg);
+}
+.number:nth-child(12){
+    transform: rotate(330deg);
+}
+.number:nth-child(12) span{
+    transform: rotate(-330deg);
+}
+#hour{
+    height: 23%;
+    width: 4%;
+    background-color: black;
+    top: 29.5%;
+    left: 49%;
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom;
+    /* display: none; */
+}
+#minute{
+    height: 30%;
+    width: 2.5%;
+    background-color: black;
+    top: 23%;
+    left: 49.5%;
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom;
+    /* display: none; */
+}
+#second{
+    height: 40%;
+    width: 1.5%;
+    background-color: black;
+    top: 12.5%;
+    left: 50%;
+    border-radius: 50% 50% 0 0;
+    transform-origin: bottom;
+    /* display: none; */
+}
+.time-container{
+    height: 60px;
+    width: 250px;
+    margin: auto;
+    /* align-items: center; */
+    text-align: center;
+}
+#ampm1{
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    /* background-color: white; */
+    color: white;
+    margin: auto;
+    margin-top: 60.82px;
+}
+/* #ampm1 span{
+    padding-top: 100px;
+} */
+
+#date{
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    /* background-color: white; */
+    color: white;
+    margin: auto;
+    /* margin-top: 60.82px; */
+}
+#day{
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    /* background-color: white; */
+    color: white;
+    margin: auto;
+    /* margin-top: 60.82px; */
+}
+#wish{
+    height: 20px;
+    width: 500px;
+    text-align: center;
+    /* background-color: white; */
+    color: white;
+    margin: auto; 
+    margin-top: 28px;
+    /* margin-right: 150px; */
+}
